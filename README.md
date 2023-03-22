@@ -8,3 +8,12 @@ Swift UI ve Alamofire kullanarak json place holder apisinden kullanıcıları ç
 4) Navigation Stack ve Link
 
 kullanılmıştır.
+
+
+EN ->
+Here are the project codes suitable for mvvm architecture, using Swiftui and the alamofire library.
+
+MVVM Architecture
+Generic Api Service (with Alamofire)
+MapKit
+Navigation Stack and Link
