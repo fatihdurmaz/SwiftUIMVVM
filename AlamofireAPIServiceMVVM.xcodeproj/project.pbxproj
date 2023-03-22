@@ -7,18 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE0E7C0C29CB9BE30099E056 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E7C0B29CB9BE30099E056 /* User.swift */; };
+		DE0E7C1029CB9BFC0099E056 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E7C0D29CB9BFC0099E056 /* Address.swift */; };
+		DE0E7C1129CB9BFC0099E056 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E7C0E29CB9BFC0099E056 /* Company.swift */; };
+		DE0E7C1229CB9BFC0099E056 /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0E7C0F29CB9BFC0099E056 /* Geo.swift */; };
 		DE5E37F129CB279A009C2EB6 /* AlamofireAPIServiceMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E37F029CB279A009C2EB6 /* AlamofireAPIServiceMVVMApp.swift */; };
 		DE5E37F329CB279A009C2EB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E37F229CB279A009C2EB6 /* ContentView.swift */; };
 		DE5E37F529CB279B009C2EB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5E37F429CB279B009C2EB6 /* Assets.xcassets */; };
 		DE5E37F829CB279B009C2EB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5E37F729CB279B009C2EB6 /* Preview Assets.xcassets */; };
+		DE5E380129CB2976009C2EB6 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E380029CB2976009C2EB6 /* ApiService.swift */; };
+		DE5E380429CB29C2009C2EB6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DE5E380329CB29C2009C2EB6 /* Alamofire */; };
+		DE5E380629CB29FB009C2EB6 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E380529CB29FB009C2EB6 /* UserViewModel.swift */; };
+		DE5E380E29CB351E009C2EB6 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E380D29CB351E009C2EB6 /* UserDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE0E7C0B29CB9BE30099E056 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DE0E7C0D29CB9BFC0099E056 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		DE0E7C0E29CB9BFC0099E056 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		DE0E7C0F29CB9BFC0099E056 /* Geo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geo.swift; sourceTree = "<group>"; };
 		DE5E37ED29CB279A009C2EB6 /* AlamofireAPIServiceMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlamofireAPIServiceMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5E37F029CB279A009C2EB6 /* AlamofireAPIServiceMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAPIServiceMVVMApp.swift; sourceTree = "<group>"; };
 		DE5E37F229CB279A009C2EB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE5E37F429CB279B009C2EB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE5E37F729CB279B009C2EB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE5E380029CB2976009C2EB6 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		DE5E380529CB29FB009C2EB6 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		DE5E380D29CB351E009C2EB6 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +41,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5E380429CB29C2009C2EB6 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE0E7C1329CB9C1C0099E056 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE5E37F229CB279A009C2EB6 /* ContentView.swift */,
+				DE5E380D29CB351E009C2EB6 /* UserDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE0E7C1429CB9C270099E056 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE5E380529CB29FB009C2EB6 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE0E7C1529CB9C2F0099E056 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE0E7C0D29CB9BFC0099E056 /* Address.swift */,
+				DE0E7C0E29CB9BFC0099E056 /* Company.swift */,
+				DE0E7C0F29CB9BFC0099E056 /* Geo.swift */,
+				DE0E7C0B29CB9BE30099E056 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE0E7C1629CB9C4B0099E056 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DE5E380029CB2976009C2EB6 /* ApiService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		DE5E37E429CB279A009C2EB6 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +103,11 @@
 		DE5E37EF29CB279A009C2EB6 /* AlamofireAPIServiceMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				DE0E7C1629CB9C4B0099E056 /* Service */,
+				DE0E7C1529CB9C2F0099E056 /* Model */,
+				DE0E7C1429CB9C270099E056 /* ViewModel */,
+				DE0E7C1329CB9C1C0099E056 /* View */,
 				DE5E37F029CB279A009C2EB6 /* AlamofireAPIServiceMVVMApp.swift */,
-				DE5E37F229CB279A009C2EB6 /* ContentView.swift */,
 				DE5E37F429CB279B009C2EB6 /* Assets.xcassets */,
 				DE5E37F629CB279B009C2EB6 /* Preview Content */,
 			);
@@ -83,6 +138,9 @@
 			dependencies = (
 			);
 			name = AlamofireAPIServiceMVVM;
+			packageProductDependencies = (
+				DE5E380329CB29C2009C2EB6 /* Alamofire */,
+			);
 			productName = AlamofireAPIServiceMVVM;
 			productReference = DE5E37ED29CB279A009C2EB6 /* AlamofireAPIServiceMVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +169,9 @@
 				Base,
 			);
 			mainGroup = DE5E37E429CB279A009C2EB6;
+			packageReferences = (
+				DE5E380229CB29C2009C2EB6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = DE5E37EE29CB279A009C2EB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +200,13 @@
 			files = (
 				DE5E37F329CB279A009C2EB6 /* ContentView.swift in Sources */,
 				DE5E37F129CB279A009C2EB6 /* AlamofireAPIServiceMVVMApp.swift in Sources */,
+				DE0E7C0C29CB9BE30099E056 /* User.swift in Sources */,
+				DE5E380129CB2976009C2EB6 /* ApiService.swift in Sources */,
+				DE5E380E29CB351E009C2EB6 /* UserDetailView.swift in Sources */,
+				DE5E380629CB29FB009C2EB6 /* UserViewModel.swift in Sources */,
+				DE0E7C1029CB9BFC0099E056 /* Address.swift in Sources */,
+				DE0E7C1129CB9BFC0099E056 /* Company.swift in Sources */,
+				DE0E7C1229CB9BFC0099E056 /* Geo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +407,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE5E380229CB29C2009C2EB6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE5E380329CB29C2009C2EB6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE5E380229CB29C2009C2EB6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE5E37E529CB279A009C2EB6 /* Project object */;
 }
