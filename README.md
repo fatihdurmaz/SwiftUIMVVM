@@ -13,7 +13,7 @@ kullanılmıştır.
 EN ->
 Here are the project codes suitable for mvvm architecture, using Swiftui and the alamofire library.
 
-MVVM Architecture
-Generic Api Service (with Alamofire)
-MapKit
-Navigation Stack and Link
+1) MVVM Architecture
+2) Generic Api Service (with Alamofire)
+3) MapKit
+4) Navigation Stack and Link
